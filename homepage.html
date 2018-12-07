@@ -6,11 +6,13 @@
 
 	<script>
 	function show() { 
+		if(!validDate()) {
+		return document.getElementById("fig").src="";
+		} else {
 		document.getElementById("fig").src ="https://user-images.githubusercontent.com/45622247/49525949-31700880-f8f2-11e8-81ce-ad2842bfaf2e.png"
-	}
-	function hide() { 
-		document.getElementById("fig").src="";
-	}
+		}
+	}		
+	
 </script>
 
 </head>
